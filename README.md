@@ -20,7 +20,7 @@ In this repository, you can find Python and Rust files for benchmarking against 
 
 1. **Performance**
 2. **Memory Safety**
-3. **Concurrency
+3. **Concurrency**
 
 Here are my findings:
 
