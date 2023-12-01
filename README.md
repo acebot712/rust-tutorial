@@ -1,56 +1,65 @@
 # Rust Tutorial
-This repository consists of solutions I wrote while problem solving to get better at Rust language.
 
-## Why learn Rust?
+Welcome to my Rust tutorial repository! Here, you'll find solutions I've written while problem-solving to improve my Rust language skills.
 
-🤖 AI Engineers, boost your skills with Rust! 🦀
+## Why Learn Rust for AI?
 
-⚙️ Speed: Rust's efficiency enhances AI performance.
-🛡️ Safety: Memory safety guards your models.
-🚀 Concurrency: Perfect for parallel AI tasks.
+🤖 **AI Engineers, Boost Your Skills with Rust!** 🦀
 
-📚 Learn Rust:
-- [Official Rust Book](https://doc.rust-lang.org/book/)
+- ⚙️ **Speed:** Rust's efficiency enhances AI performance.
+- 🛡️ **Safety:** Memory safety guards your models.
+- 🚀 **Concurrency:** Perfect for parallel AI tasks.
 
-## Benchmarking against Python
+## Learning Resources
 
-Table Summary:-
+📚 To get started with Rust, check out the [Official Rust Book](https://doc.rust-lang.org/book/).
 
-|                   |             **Python**            |                              **Rust**                             |
-|:-----------------:|:---------------------------------:|:-----------------------------------------------------------------:|
-| **Performance**   | 2861.02294921875ns                | **667ns**                                                             |
-| **Memory Safety** | Limited Information in  Backtrace | Adjust RUST_BACKTRACE values to get more detailed error backtrace |
-| **Concurrency**   | 33.16351079940796s                | **1.120522166s**                                                      |
+## Benchmarking Against Python
+
+In this repository, you can find Python and Rust files for benchmarking against three different metrics:
+
+1. **Performance**
+2. **Memory Safety**
+3. **Concurrency
+
+Here are my findings:
+
+### Table Summary for Benchmarking
+
+| Metric            | **Python**                          | **Rust**                                                           |
+|-------------------|------------------------------------|-------------------------------------------------------------------|
+| **Performance**   | 2.861 ms                           | **667 ns**                                                        |
+| **Memory Safety** | Limited Information in Backtrace   | Detailed Error Backtrace (Adjust RUST_BACKTRACE for more info)   |
+| **Concurrency**   | 33.164 seconds                     | **1.121 seconds**                                                 |
+
 ### Performance
+
 **Python**
 ```sh
-Factorial of 20 is: 2432902008176640000
-Time taken: 2861.02294921875ns
+Factorial of 20 is: 2,432,902,008,176,640,000
+Time taken: 2.861 ms
 ```
-
 **Rust**
 ```sh
-Factorial of 20 is: 2432902008176640000
-Time taken: 667ns
+Factorial of 20 is: 2,432,902,008,176,640,000
+Time taken: 667 ns
 ```
 
 ### Memory Safety
-The Python program will raise an IndexError, but it won't provide as detailed information about the error's origin as Rust does.
-
-The Rust program will panic and provide a clear error message indicating the issue and where it occurred.
+- The Python program raises an IndexError with limited error information.
+- The Rust program panics and provides a detailed error message.
 
 ### Concurrency
 **Python**
 ```sh
-Sum: 499999999500000000
-Time taken: 33.16351079940796s
+Sum: 499,999,999,500,000,000
+Time taken: 33.164 seconds
 ```
+
 **Rust**
 ```sh
-Sum: 499999999500000000
-Time taken: 1.120522166s
+Sum: 499,999,999,500,000,000
+Time taken: 1.121 seconds
 ```
-
-
 
 Empower your AI projects with Rust! 🌐🤖 #AIEngineering #RustLang 🦀💻
